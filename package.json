@@ -62,6 +62,7 @@
     "pretty-hrtime": "1.0.2",
     "require-dir": "0.3.0",
     "run-sequence": "^1.0.2",
+    "serve-favicon": "^2.3.2",
     "serviceworker-cache-polyfill": "^3.0.0",
     "sinon": "1.17.3",
     "sinon-chai": "2.8.0",

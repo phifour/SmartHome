@@ -1,0 +1,134 @@
+html, body {
+  margin-right: 10px;
+  color: #333;
+  background-color: #EAEAEA;
+  font-size: 1em;
+  font-family: Voltaire, helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+}
+
+ table
+      {
+         border: 1px solid black;
+         table-layout: fixed;
+         width: 20px; /*Table width must be set or it wont resize the cells*/
+      }
+      th, td 
+      {
+          border: 10px solid black;
+          width: 30px;
+      }
+
+
+#content {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #66ffff;
+}
+
+
+@media (max-width: 768px) {
+  html, body {
+    margin-right: 50px;
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+svg {
+  margin: 0 auto;
+  align-self: center;
+  border: 2px solid rgba(100, 100, 100, 0.5);
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*.chart {
+  padding: 15px;
+}*/
+
+text {
+  font-size: 18px;
+  pointer-events: none;
+  fill: #000000;
+}
+
+#loading {
+  font-size: 22px;
+  fill: #333;
+}
+
+.number {
+  font-size: 32px;
+  fill: #fff;
+  opacity: .8;
+}
+
+circle {
+  opacity: .6;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+circle:hover {
+  opacity: .4;
+}
+
+.some {
+  border: 1px solid #cacaca;
+  padding: 10px;
+}
+
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text {
+	  font: 10px sans-serif;
+	  font-weight: bold;
+	}
+
+	.link {
+	  fill: none;
+	  stroke: #e0e0e0;
+	  stroke-width: 4px;
+	}
+	
+.grid {
+  width: 500px;
+  height: 750px;
+}
+
+.rotate_text
+      {
+         -moz-transform:rotate(-90deg); 
+         -moz-transform-origin: top left;
+         -webkit-transform: rotate(-90deg);
+         -webkit-transform-origin: top left;
+         -o-transform: rotate(-90deg);
+         -o-transform-origin: top left;
+          position:relative;
+         top:400px;
+      }
+
+.rotated_cell
+      {
+         height:450px;
+         vertical-align:bottom
+      }
+
+	  
+	
+	
+	

@@ -1,8 +1,6 @@
-
 var express = require('express');
- var server = express();
-s
-erver.use(express.static(__dirname + '/public'));
+var server = express();
+server.use(express.static(__dirname + '/public'));
  
 var port = 3000;
 server.listen(port, function() {

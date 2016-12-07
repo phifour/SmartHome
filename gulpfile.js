@@ -214,6 +214,11 @@ gulp.task('fonts', function () {
 });
 
 
+gulp.task('icon', function () {
+    gulp.src(['./src/icon/**'])
+        .pipe(gulp.dest('./public/'))
+});
+
 
 gulp.task('watch', ['build'], function () {
     gulp.watch(['src/*.html'], ['html']);
@@ -241,7 +246,7 @@ gulp.task('generate-service-worker', function (callback) {
 gulp.task('build', function () {
     // orig    return runSequence('clean', ['css', 'misc', 'html', 'js']);
     //   return runSequence(['css', 'misc', 'html', 'js']);
-    return runSequence('clean', ['css', 'html', 'js', 'data', 'img', 'fonts', 'dependencies','generate-service-worker']);
+    return runSequence('clean', ['css', 'html', 'js', 'data', 'img', 'fonts','icon','dependencies','generate-service-worker']);
 });
 
 gulp.task('serve', ['browser-sync', 'watch']);

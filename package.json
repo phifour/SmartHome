@@ -10,7 +10,7 @@
   "homepage": "http://code.viget.com/gulp-starter/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vigetlabs/gulp-starter.git"
+    "url": "https://github.com/phifour/SmartHome.git"
   },
   "scripts": {
     "start": "node server.js"

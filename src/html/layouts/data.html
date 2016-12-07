@@ -1,0 +1,104 @@
+<h1>Data View</h1>
+{% raw %}
+<div ng-controller="DataViewCtrl">
+        
+<div class="alert alert-warning"  ng-show="dataupdate" role="alert">
+  <strong>Warning! Data has been actualized.</strong>
+</div>
+
+<!--<span ng-bind="windowWidth"></span>-->
+
+<table ng-table="tp" ng-show="windowWidth>800" class="table table-condensed table-bordered table-striped" >
+    <tr ng-repeat="row in $data">
+        <td data-title="'Customer'" filter="{customername: 'text'}" sortable="'customername'">{{row.customername}}</td>
+        <td data-title="'Submission'" sortable="'subtimestamp'">{{row.subtimestamp | date:'dd.MM.yyyy'}}</td>
+        <td data-title="'Customer email'" filter="{email: 'text'}" sortable="'email'">{{row.email}}</td>
+        <td data-title="'Description'" filter="{description: 'text'}" sortable="'description'">{{row.description}}</td>
+        <td data-title="'Status'" filter="{status: 'text'}" sortable="'status'">{{row.status}}</td>
+        <td data-title="'Closed'" sortable="'closedtimestamp'">{{row.closedtimestamp | date:'dd.MM.yyyy'}}</td>       
+        <td data-title="'Employee'" filter="{employeename: 'text'}" sortable="'employeename'">{{row.employeename}}</td>                   
+    </tr>
+</table>
+
+<!--<ul class="list-group" ng-show="windowWidth>650" >
+  <li class="list-group-item" ng-repeat="row in mobiletable">
+      {{row.customername}}
+    </li>
+  <li class="list-group-item">{{row.customername}}</li>
+  <li class="list-group-item">{{row.subtimestamp | date:'dd.MM.yyyy'}}</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>  
+</ul>-->
+
+<div class="list-group"  ng-show="windowWidth<800">
+<label for="frmSearch">Search</label>
+<input type="text" class="form-control" ng-model="datasearch" id="frmSearch" />
+<li class="list-group-item list-group-item-action" ng-repeat="row in mobiletable|filter:datasearch">
+    <h5 class="list-group-item-heading">Customer: {{row.customername}}</h5>
+    <h5 class="list-group-item-heading">Submission: {{row.subtimestamp | date:'dd.MM.yyyy'}}</h5>
+    <h5 class="list-group-item-heading">Customer: {{row.email}}</h5>
+    <h5 class="list-group-item-heading">Description:</h5>
+    <p class="list-group-item-text">{{row.description}}</p>
+    <h5 class="list-group-item-heading">Status: {{row.status}}</h5>
+    <h5 class="list-group-item-heading">Closed: {{row.closedtimestamp | date:'dd.MM.yyyy'}}</h5>
+    <h5 class="list-group-item-heading">Employee: {{row.employeename}}</h5>
+  </li>
+</div>
+
+
+
+
+
+
+<!--<div class="container">
+  <h2>Data</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="row in mobiletable">
+        <td>Customer name</td>
+        <td>{{row.customername}}</td>
+        
+        <td>Submission</td>
+        <td>{{row.subtimestamp | date:'dd.MM.yyyy'}}</td>
+        
+          <td>Customer email address</td>
+        <td>{{row.email}}</td>      
+        
+              <td>Description</td>
+        <td>{{row.description}}</td>  
+        
+               <td>Status</td>
+        <td>{{row.status}}</td> 
+        
+                <td>Closed</td>
+        <td>{{row.closedtimestamp | date:'dd.MM.yyyy'}}</td>
+        
+                        <td>Employee name</td>
+        <td>{{row.employeename}}</td>
+        
+        
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+
+
+
+
+
+
+</div>
+
+{% endraw %}
+
+
+
+
+
+

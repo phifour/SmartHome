@@ -1,0 +1,18 @@
+{
+    "stations": [
+        {
+            "idKey": 583187,
+            "latitude": 48.31522491,
+            "longitude": 14.28209782,
+            "title": "Subsidiary 1",
+            "employees": 400
+        },
+        {
+            "idKey": 583287,
+            "latitude": 48.20705775,
+            "longitude": 16.38044357,
+            "title": "Subsidiary 2",
+            "employees":300
+        }
+    ]
+}

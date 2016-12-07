@@ -1,0 +1,14 @@
+.angular-google-map-container { height: 400px; }
+
+.labels {
+     color: black;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     text-align: center;
+     width: 200px;
+     height:20px;
+     border: 1px solid black;
+     white-space: nowrap;
+   }

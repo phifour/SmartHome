@@ -1,21 +1,16 @@
 {
-  "name": "gulp-starter",
-  "version": "3.1.0",
-  "description": "A full featured configurable gulp asset pipeline and static site builder",
-  "main": "server.js",
+  "name": "node-js-getting-started",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
   "engines": {
-    "node": "5.5.0",
-    "npm": ">=2.14.12 ~3.7.3"
+    "node": "5.9.1"
   },
-  "homepage": "http://code.viget.com/gulp-starter/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/phifour/SmartHome.git"
-  },
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
-  "devDependencies": {
+  "dependencies": {
+    "ejs": "2.4.1",
     "babel-core": "6.7.2",
     "babel-loader": "6.2.4",
     "babel-preset-es2015": "6.6.0",
@@ -77,8 +72,14 @@
     "webpack-hot-middleware": "2.10.0",
     "whatwg-fetch": "^0.7.0"
   },
-  "license": "MIT",
-  "dependencies": {
-    "normalize.css": "^4.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
